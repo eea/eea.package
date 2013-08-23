@@ -1,0 +1,15 @@
+""" Interfaces
+"""
+from zope.interface import Interface
+from zope import schema
+from $project.config import EEAMessageFactory as _
+
+class ISettings(Interface):
+    """ Alchemy settings
+    """
+    token = schema.TextLine(
+        title=_(u"Token"),
+        description=_(u"Provide token"),
+        required=True,
+        default=u""
+    )

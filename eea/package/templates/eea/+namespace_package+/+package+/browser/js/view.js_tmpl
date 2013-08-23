@@ -1,0 +1,47 @@
+if(window.EEA === undefined){
+  var EEA = {
+    who: '$project',
+    version: '$version'
+  };
+}
+
+EEA.${$package.title()} = function(context, options){
+ var self = this;
+  self.context = context;
+
+  self.settings = {
+  };
+
+  if(options){
+    jQuery.extend(self.settings, options);
+  }
+
+  self.initialize();
+};
+
+EEA.${$package.title()}.prototype = {
+  initialize: function(){
+    var self = this;
+  }
+};
+
+
+jQuery.fn.EEA${$package.title()} = function(options){
+  return this.each(function(){
+    var context = jQuery(this);
+    var adapter = new EEA.${$package.title()}(context, options);
+    context.data('EEA${$package.title()}', adapter);
+  });
+};
+
+jQuery(document).ready(function(){
+
+  var items = jQuery(".${$project.replace('.', '-')}");
+  if(!items.length){
+    return;
+  }
+
+  var settings = {};
+  items.EEA${$package.title()}(settings);
+
+});
