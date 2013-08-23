@@ -2,13 +2,13 @@
 <object name="portal_controlpanel">
 
   <configlet
-    title="$title Settings"
-    action_id="$project.settings"
-    icon_expr="string:$portal_url/++resource++$project.png"
-    appId="$project"
+    title="${title} Settings"
+    action_id="${project}.settings"
+    icon_expr="string:portal_url/++resource++${project}.png"
+    appId="${project}"
     category="Products"
     condition_expr=""
-    url_expr="string:${portal_url}/@@$package-controlpanel"
+    url_expr="string:portal_url/@@$package-controlpanel"
     visible="True">
       <permission>Manage portal</permission>
   </configlet>

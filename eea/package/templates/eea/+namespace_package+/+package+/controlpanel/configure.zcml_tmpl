@@ -12,7 +12,7 @@
 
   <adapter
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    provides="$project.controlpanel.interfaces.ISettings"
+    provides="${project}.controlpanel.interfaces.ISettings"
     factory=".settings.ControlPanelAdapter" />
 
 </configure>

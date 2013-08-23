@@ -3,7 +3,7 @@
 import os
 from setuptools import setup, find_packages
 
-NAME = ${repr($project)}
+NAME = "${project}"
 PATH = NAME.split('.') + ['version.txt']
 VERSION = open(os.path.join(*PATH)).read().strip()
 
@@ -28,7 +28,7 @@ setup(name=NAME,
       keywords=${repr($keywords) or $empty},
       author=${repr($author) or 'European Environment Agency'},
       author_email=${repr($author_email) or 'webadmin@eea europa eu'},
-      url=${repr($url) or 'http://eea.github.io/docs/$project'},
+      url=${repr($url) or 'http://eea.github.io/docs/${project}'},
       license=${repr($license_name) or 'GPL'},
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['$namespace_package', ],

@@ -27,7 +27,7 @@ setup(name=NAME,
         ],
       keywords='zopeskel template eea package',
       author='European Environment Agency',
-      author_email='webadmin@eea europa eu',
+      author_email='webadmin@eea.europa.eu',
       url='http://eea.github.io/docs/eea.package',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
@@ -44,5 +44,6 @@ setup(name=NAME,
         # These will declare what templates paster create command can find
         # -*- Entry points: -*-
         [paste.paster_create_template]
+        eea = eea.package.eea:EEA
         """,
       )

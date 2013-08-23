@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <registry>
-  <records interface="$project.controlpanel.interfaces.ISettings" />
+  <records interface="${project}.controlpanel.interfaces.ISettings" />
 </registry>

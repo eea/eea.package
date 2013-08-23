@@ -1,4 +1,4 @@
 [buildout]
 extends = versions.cfg
-package-name = $project
+package-name = ${project}
 develop = ../../

@@ -5,25 +5,25 @@
 
   <browser:page
     for="*"
-    layer="$project.interfaces.ILayer"
-    name="$project.view"
+    layer="${project}.interfaces.ILayer"
+    name="${project}.view"
     template="zpt/view.pt"
     class=".app.view.View"
     permission="zope2.View"
     />
 
   <browser:resource
-    name="$project.view.css"
+    name="${project}.view.css"
     file="./css/view.css"
    />
 
   <browser:resource
-    name="$project.view.js"
+    name="${project}.view.js"
     file="./js/view.js"
    />
 
   <browser:resourceDirectory
-    name="$project.images"
+    name="${project}.images"
     directory="./img" />
 
 </configure>

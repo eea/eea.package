@@ -2,7 +2,7 @@
 """
 
 PROJECTNAME = '${namespace_package}.${package}'
-ADD_PERMISSION = "$project: Add"
+ADD_PERMISSION = "${project}: Add"
 
 from zope.i18nmessageid import MessageFactory
 EEAMessageFactory = MessageFactory('${namespace_package}')

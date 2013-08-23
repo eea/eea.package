@@ -2,7 +2,7 @@
 """
 import doctest
 import unittest
-from $project.tests.base import FUNCTIONAL_TESTING
+from ${project}.tests.base import FUNCTIONAL_TESTING
 from plone.testing import layered
 
 OPTIONFLAGS = (doctest.REPORT_ONLY_FIRST_FAILURE |
@@ -18,13 +18,13 @@ def test_suite():
             doctest.DocFileSuite(
                 'interfaces.py',
                 optionflags=OPTIONFLAGS,
-                package='$project'),
+                package='${project}'),
             layer=FUNCTIONAL_TESTING),
         layered(
             doctest.DocFileSuite(
                 'README.txt',
                 optionflags=OPTIONFLAGS,
-                package='$project'),
+                package='${project}'),
             layer=FUNCTIONAL_TESTING),
     ])
     return suite

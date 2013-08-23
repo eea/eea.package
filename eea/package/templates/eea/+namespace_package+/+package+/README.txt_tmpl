@@ -9,7 +9,7 @@ ${description or None}
 Installation
 ============
   * Go to admin > Site Setup > Add-ons
-  * Activate $project
+  * Activate ${project}
 
 Getting started
 ===============

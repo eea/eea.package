@@ -1,10 +1,10 @@
 ======================
 ${title or None}
 ======================
-.. image:: http://ci.eionet.europa.eu/job/$project-www/badge/icon
-  :target: http://ci.eionet.europa.eu/job/$project-www/lastBuild
-.. image:: http://ci.eionet.europa.eu/job/$project-plone4/badge/icon
-  :target: http://ci.eionet.europa.eu/job/$project-plone4/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/${project}-www/badge/icon
+  :target: http://ci.eionet.europa.eu/job/${project}-www/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/${project}-plone4/badge/icon
+  :target: http://ci.eionet.europa.eu/job/${project}-plone4/lastBuild
 
 ${description or None}
 
@@ -23,10 +23,10 @@ Main features
 Install
 =======
 
-- Add $project to your eggs section in your buildout and re-run buildout.
+- Add ${project} to your eggs section in your buildout and re-run buildout.
   You can download a sample buildout from
-  https://github.com/eea/$project/tree/master/buildouts/plone4
-- Install $project within Site Setup > Add-ons
+  https://github.com/eea/${project}/tree/master/buildouts/plone4
+- Install ${project} within Site Setup > Add-ons
 
 Getting started
 ===============
@@ -46,7 +46,7 @@ Source code
 ===========
 
 - Latest source code (Plone 4 compatible):
-  https://github.com/eea/$project
+  https://github.com/eea/${project}
 
 
 Copyright and license

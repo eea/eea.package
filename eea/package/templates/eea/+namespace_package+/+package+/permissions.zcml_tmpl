@@ -3,9 +3,9 @@
   i18n_domain="eea">
 
   <permission
-    id="$project.add"
-    title="$project: Add"
-    description="Add $title"
+    id="${project}.add"
+    title="${project}: Add"
+    description="Add ${title}"
     />
 
 </configure>

@@ -1,4 +1,4 @@
 /* CSS */
-.${$project.replace('.', '-')} {
+.${project.replace('.', '-')} {
 
 }
