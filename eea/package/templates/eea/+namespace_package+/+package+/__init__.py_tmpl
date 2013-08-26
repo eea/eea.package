@@ -6,6 +6,7 @@ from ${namespace_package}.${package} import config
 
 from Products.Archetypes import atapi
 from Products.CMFCore import utils
+from ${project} import content
 #end if
 
 #if str($zope2product) == 'True'
@@ -13,6 +14,8 @@ from Products.CMFCore import utils
 def initialize(context):
     """Initializer called when used as a Zope 2 product.
     """
+
+    content.register()
 
     content_types, constructors, _ftis = atapi.process_types(
         atapi.listTypes(config.PROJECTNAME),

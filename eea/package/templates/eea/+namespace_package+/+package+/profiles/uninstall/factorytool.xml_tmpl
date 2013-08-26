@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<object name="portal_factory">
-  <factorytypes>
-    <!-- -*- uninstall extra stuff goes here -*- -->
-  </factorytypes>
-</object>

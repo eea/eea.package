@@ -1,0 +1,10 @@
+""" Custom content
+"""
+from Products.ATContentTypes.content.base import registerATCT
+from ${project}.content.${ctype_module} import ${ctype}
+from ${project}.config import PROJECTNAME
+
+def register():
+    """ Register custom content-types
+    """
+    registerATCT(${ctype}, PROJECTNAME)

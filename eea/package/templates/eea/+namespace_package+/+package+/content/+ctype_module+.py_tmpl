@@ -1,0 +1,49 @@
+"""Definition of the $ctype content type
+"""
+
+from zope.interface import implements
+
+from Products.Archetypes import atapi
+#if str($folderish) == 'True'
+from Products.ATContentTypes.content import folder
+#else
+from Products.ATContentTypes.content import base
+#end if
+from Products.ATContentTypes.content import schemata
+
+# -*- Message Factory Imported Here -*-
+
+from ${project}.content.interfaces import I${ctype}
+
+#if str($folderish) == 'True'
+${ctype}Schema = folder.ATFolderSchema.copy() + atapi.Schema((
+#else
+${ctype}Schema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
+#end if
+
+    # -*- Your Archetypes field definitions here ... -*-
+
+))
+
+
+#if str($folderish) == 'True'
+schemata.finalizeATCTSchema(
+    ${ctype}Schema,
+    folderish=True,
+    moveDiscussion=False
+)
+#else
+schemata.finalizeATCTSchema(${ctype}Schema, moveDiscussion=False)
+#end if
+
+
+#if str($folderish) == 'True'
+class ${ctype}(folder.ATFolder):
+#else
+class ${ctype}(base.ATCTContent):
+#end if
+    """${ctype}"""
+    implements(I${ctype})
+
+    meta_type = "${ctype}"
+    schema = ${ctype}Schema
