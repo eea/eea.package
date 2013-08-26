@@ -1,7 +1,16 @@
 """ Public interfaces
 """
-from zope.interface import Interface
+# Browser layer
+from ${project}.browser.interfaces import ILayer
 
-class ILayer(Interface):
-    """ Custom layer for this package
-    """
+# Content
+from ${project}.content.interfaces import I${ctype}
+
+# Control Panel
+from ${project}.controlpanel.interfaces import ISettings
+
+__all__ = [
+    ILayer.__name__,
+    I${ctype}.__name__,
+    ISettings.__name__,
+]

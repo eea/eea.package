@@ -13,7 +13,7 @@ from Products.ATContentTypes.content import schemata
 
 # -*- Message Factory Imported Here -*-
 
-from ${project}.content.interfaces import I${ctype}
+from ${project}.interfaces import I${ctype}
 
 #if str($folderish) == 'True'
 ${ctype}Schema = folder.ATFolderSchema.copy() + atapi.Schema((
@@ -42,8 +42,12 @@ class ${ctype}(folder.ATFolder):
 #else
 class ${ctype}(base.ATCTContent):
 #end if
-    """${ctype}"""
+    """ ${ctype} """
+
     implements(I${ctype})
 
     meta_type = "${ctype}"
+    portal_type = "${ctype}"
+    archetypes_name = "${ctype}"
+
     schema = ${ctype}Schema

@@ -1,7 +1,17 @@
 """ Content interfaces
+
+   >>> portal = layer['portal']
+   >>> sandbox = portal['sandbox']
+
 """
 from zope.interface import Interface
 
 class I${ctype}(Interface):
     """ ${ctype}
+
+        >>> fid = sandbox.invokeFactory('${ctype}', id='${ctype}')
+        >>> doc = sandbox._getOb(fid)
+        >>> doc
+        <${ctype} at...>
+
     """
