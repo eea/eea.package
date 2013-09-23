@@ -15,20 +15,14 @@ class EEAFixture(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         """ Setup Zope
         """
-        import eea.soercontent
-        self.loadZCML(package=eea.soercontent)
-        z2.installProduct(app, 'eea.soercontent')
 
     def tearDownZope(self, app):
         """ Uninstall Zope
         """
-        z2.uninstallProduct(app, 'eea.soercontent')
 
     def setUpPloneSite(self, portal):
         """ Setup Plone
         """
-        self.applyProfile(portal, 'eea.soercontent:default')
-
         # Login as manager
         setRoles(portal, TEST_USER_ID, ['Manager'])
 
