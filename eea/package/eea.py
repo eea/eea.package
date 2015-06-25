@@ -17,8 +17,8 @@ class EEA(BasicZope):
     required_templates = []
     use_local_commands = True
     use_cheetah = True
-    vars = copy.deepcopy(BasicZope.vars)
-    vars.insert(1, StringVar(
+    variables = copy.deepcopy(BasicZope.vars)
+    variables.insert(1, StringVar(
         'title',
         title='Project Title',
         description='Title of the project',
@@ -30,7 +30,7 @@ class EEA(BasicZope):
         in Plone's Add/Remove products form.
         """
     ))
-    vars.insert(2, StringVar(
+    variables.insert(2, StringVar(
         'ctype',
         title='Archetypes Content-Type',
         description='Archetypes Content-Type Class',
@@ -38,7 +38,7 @@ class EEA(BasicZope):
         default='DummyDocument',
         help="This creates an archetypes content-type."
     ))
-    vars.insert(3, StringVar(
+    variables.insert(3, StringVar(
         'folderish',
         title='Is folderish',
         description='Is this content-type folderish?',
@@ -47,17 +47,17 @@ class EEA(BasicZope):
         help="This creates an archetypes content-type folderish or not"
     ))
 
-    get_var(vars, 'namespace_package').default = 'eea'
-    get_var(vars, 'package').default = 'example'
-    get_var(vars, 'description').default = 'EEA Package'
-    get_var(vars, 'license_name').default = 'GPL version 2'
-    get_var(vars, 'author').default = 'European Environment Agency'
-    get_var(vars, 'author_email').default = 'webadmin@eea.europa.eu'
-    get_var(vars, 'keywords').default = 'eea zope plone python'
-    get_var(vars, 'url').default = 'http://eea.github.io'
+    get_var(variables, 'namespace_package').default = 'eea'
+    get_var(variables, 'package').default = 'example'
+    get_var(variables, 'description').default = 'EEA Package'
+    get_var(variables, 'license_name').default = 'GPL version 2'
+    get_var(variables, 'author').default = 'European Environment Agency'
+    get_var(variables, 'author_email').default = 'webadmin@eea.europa.eu'
+    get_var(variables, 'keywords').default = 'eea zope plone python'
+    get_var(variables, 'url').default = 'http://eea.github.io'
 
-    def pre(self, command, output_dir, vars):
+    def pre(self, command, output_dir, variables):
         """ Pre
         """
-        vars['ctype'] = vars['ctype'].title().replace(" ", "")
-        vars['ctype_module'] = vars['ctype'].lower()
+        variables['ctype'] = variables['ctype'].title().replace(" ", "")
+        variables['ctype_module'] = variables['ctype'].lower()
