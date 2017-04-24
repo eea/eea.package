@@ -4,7 +4,7 @@ Changelog
 1.1-dev - (unreleased)
 ----------------------
 * Change: updated package information
-[eduard-fironda]
+  [eduard-fironda]
 
 1.0 - (2013-09-23)
 ------------------
