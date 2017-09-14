@@ -1,10 +1,8 @@
 ===========
 EEA Package
 ===========
-.. image:: http://ci.eionet.europa.eu/job/eea.package-www/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.package-www/lastBuild
-.. image:: http://ci.eionet.europa.eu/job/eea.package-plone4/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea.package-plone4/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.package/job/master/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea/job/eea.package/job/master/display/redirect
 
 ZopeSkel template for EEA Packages
 
