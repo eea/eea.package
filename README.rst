@@ -1,8 +1,12 @@
 ===========
 EEA Package
 ===========
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.package/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.package/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.package/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.package/job/develop/display/redirect
+  :alt: develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.package/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.package/job/master/display/redirect
+  :alt: master
 
 ZopeSkel template for EEA Packages
 
@@ -49,4 +53,4 @@ Funding
 
 EEA_ - European Environment Agency (EU)
 
-.. _EEA: http://www.eea.europa.eu/
+.. _EEA: https://www.eea.europa.eu/

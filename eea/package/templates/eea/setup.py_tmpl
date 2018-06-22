@@ -13,7 +13,7 @@ setup(name=NAME,
       long_description=(open("README.rst").read() + "\n" +
                         open(os.path.join("docs", "HISTORY.txt")).read()),
       # Get more strings from
-      # http://pypi.python.org/pypi?:action=list_classifiers
+      # https://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
           "Framework :: Zope2",
           "Framework :: Zope3",
@@ -28,7 +28,7 @@ setup(name=NAME,
       keywords=${repr($keywords) or $empty},
       author=${repr($author) or 'European Environment Agency'},
       author_email=${repr($author_email) or 'webadmin@eea europa eu'},
-      url=${repr($url) or 'http://eea.github.io/docs/${project}'},
+      url=${repr($url) or 'https://eea.github.io/docs/${project}'},
       license=${repr($license_name) or 'GPL'},
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['$namespace_package', ],

@@ -54,7 +54,7 @@ class EEA(BasicZope):
     get_var(variables, 'author').default = 'European Environment Agency'
     get_var(variables, 'author_email').default = 'webadmin@eea.europa.eu'
     get_var(variables, 'keywords').default = 'eea zope plone python'
-    get_var(variables, 'url').default = 'http://eea.github.io'
+    get_var(variables, 'url').default = 'https://eea.github.io'
 
     def pre(self, command, output_dir, variables):
         """ Pre
